@@ -1,1 +1,74 @@
-[]
+[
+  {
+    "id": "mwlsjs4p-5vq64jtf1",
+    "author": "",
+    "text": "매운 거 땡기는 날이네요 🔥",
+    "createdAt": "2026-11-15T17:19:56.720Z",
+    "reactions": {
+      "🍺": 2,
+      "🔥": 2
+    }
+  },
+  {
+    "id": "mwlsjs4p-cjzwku7m5",
+    "author": "김민준",
+    "text": "2차는 가볍게 맥주 한잔?",
+    "createdAt": "2026-11-17T00:46:43.436Z",
+    "reactions": {
+      "👍": 5,
+      "🍺": 5
+    }
+  },
+  {
+    "id": "mwlsjs4p-t9z2l9tj3",
+    "author": "",
+    "text": "금요일은 다들 피곤하니까 목요일 어때요?",
+    "createdAt": "2026-11-17T11:39:21.890Z",
+    "reactions": {
+      "😂": 1,
+      "🔥": 1
+    }
+  },
+  {
+    "id": "mwlsjs4p-llebgukh4",
+    "author": "정도윤",
+    "text": "채식하는 분도 계셔서 메뉴 다양한 곳이면 좋겠습니다.",
+    "createdAt": "2026-11-17T13:46:25.619Z",
+    "reactions": {
+      "👍": 1,
+      "🍺": 4
+    }
+  },
+  {
+    "id": "mwlsjs4p-qzp0bcmk6",
+    "author": "",
+    "text": "예약은 제가 해둘게요.",
+    "createdAt": "2026-11-17T19:21:03.380Z",
+    "reactions": {}
+  },
+  {
+    "id": "mwlsjs4p-g8tq2mxb2",
+    "author": "최하윤",
+    "text": "장소는 회사 근처가 좋겠어요.",
+    "createdAt": "2026-11-18T01:50:19.126Z",
+    "reactions": {
+      "👍": 5
+    }
+  },
+  {
+    "id": "mwlsjs4p-rntr0yze7",
+    "author": "",
+    "text": "주차 가능한 곳이면 좋겠어요.",
+    "createdAt": "2026-11-18T04:10:34.978Z",
+    "reactions": {}
+  },
+  {
+    "id": "mwlsjs4p-wsj4zxtb0",
+    "author": "박지후",
+    "text": "이번엔 고기 먹어요!",
+    "createdAt": "2026-11-18T04:17:34.630Z",
+    "reactions": {
+      "😂": 1
+    }
+  }
+]

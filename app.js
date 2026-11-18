@@ -130,6 +130,19 @@
     if (!$('listModal').hidden && selectedDate) fillList(selectedDate);
   }
 
+  // 서버 없이 쓰는 모드에서 처음 방문한 브라우저에는 저장소의 data/*.json을 초기 데이터로 불러온다.
+  function loadSampleFiles() {
+    var names = ['participations', 'comments', 'votes'];
+    Promise.all(names.map(function (n) {
+      return fetch('data/' + n + '.json', { cache: 'no-store' }).then(function (r) { return r.ok ? r.json() : null; });
+    })).then(function (res) {
+      if (!Array.isArray(res[0]) || !res[0].length) return;
+      if (records.length || comments.length) return;      // 그 사이 직접 입력했다면 덮어쓰지 않음
+      applyState({ records: res[0], comments: res[1] || [], votes: res[2] || {} });
+      save(); saveComments(); saveVotes();
+    }).catch(function () {});
+  }
+
   function pull() {
     if (!REMOTE || pending > 0) return Promise.resolve();
     return request('/api/state', { cache: 'no-store' }).then(function (s) {
@@ -813,6 +826,7 @@
     comments = REMOTE ? [] : loadComments();
     votes = REMOTE ? {} : loadVotes();
     myReact = loadMyReact();
+    try { if (!REMOTE && localStorage.getItem(STORAGE_KEY) === null) loadSampleFiles(); } catch (e) {}
 
     $('voterSelect').addEventListener('change', renderVoteList);
     $('voteList').addEventListener('click', function (e) {
