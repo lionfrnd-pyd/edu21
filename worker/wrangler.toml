@@ -1,0 +1,16 @@
+name = "team-dinner-api"
+main = "src/index.js"
+compatibility_date = "2025-01-01"
+
+[vars]
+# 데이터를 저장할 GitHub 저장소 (소유자/저장소명)
+GH_REPO = "lionfrnd-pyd/edu21"
+GH_BRANCH = "main"
+# 이 주소에서 온 요청만 허용 (GitHub Pages 주소, 여러 개면 쉼표로 구분)
+ALLOWED_ORIGIN = "https://lionfrnd-pyd.github.io"
+# 등록/취소 허용 시간 (한국 시간, 시작 이상 ~ 종료 미만)
+START_HOUR = "12"
+END_HOUR = "17"
+
+# 토큰은 여기에 적지 말고 시크릿으로 등록하세요:
+#   npx wrangler secret put GITHUB_TOKEN

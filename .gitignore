@@ -1,0 +1,6 @@
+# 저장소에 올리지 않는 파일
+cleverse.html
+seed.js
+node_modules/
+.wrangler/
+.dev.vars
